@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class PlyaerController : MonoBehaviour
@@ -13,7 +14,8 @@ public class PlyaerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //We'll move the vehicle forward
-
-    }
+        //We'll move the vehicle forward  
+        transform.Translate(Vector3.forward * Time.deltaTime * 20);    
+            
+     }
 }
